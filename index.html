@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- lien pour les icones -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Feuille de style du plugin (drapeaux, mise en forme) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.1.1/css/intlTelInput.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+    />
+
+    <!-- lien vers boostrap -->
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+  </head>
+  <body style="background: beige">
+    <header class="">
+      <nav class="mb-5 fixed-top navbar navbar-expand-lg bg-light shadow-sm">
+        <div
+          class="container d-flex align-items-center justify-content-between"
+        >
+          <!-- Logo à gauche -->
+          <a href="#" class="navbar-brand fw-bold">
+            <img
+              src="Images/logo_dryggo_kouame.jpg"
+              width="70"
+              height="70"
+              alt="Logo DK"
+              class="d-inline-block align-text-center logo"
+            />
+          </a>
+
+          <!-- Bouton avec photo (visible uniquement sur petit écran) -->
+          <div class="dropdown d-lg-none">
+            <button
+              class="btn border-0 p-0"
+              type="button"
+              id="menuButton"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="Images/Moi_1.jpg"
+                width="45"
+                height="45"
+                alt="Photo de profil"
+                class="rounded-circle border"
+                style="object-fit: cover"
+              />
+              <span class="ms-1">▼</span>
+            </button>
+
+            <!-- Menu déroulant sous la photo -->
+            <ul
+              class="dropdown-menu dropdown-menu-end mt-2"
+              aria-labelledby="menuButton"
+            >
+              <li>
+                <a class="dropdown-item" href="#acceuil"
+                  ><i class="fa-solid fa-house me-2"></i>Accueil / Intro</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#propos-moi"
+                  ><i class="fa-solid fa-user me-2"></i>À propos de moi</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#Competence"
+                  ><i class="fa-solid fa-code me-2"></i>Compétences</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#Projets"
+                  ><i class="fa-solid fa-briefcase me-2"></i>Projets &
+                  Réalisations</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#Contact"
+                  ><i class="fa-solid fa-phone me-2"></i>Contacts</a
+                >
+              </li>
+
+              <li>
+                <a class="dropdown-item" href="#Partenariat"
+                  ><i class="fa-solid fa-handshake me-2"></i>Partenariats</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Menu complet (visible sur grand écran) -->
+          <div
+            class="collapse navbar-collapse justify-content-end d-none d-lg-flex"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#acceuil"
+                  ><i class="fa-solid fa-house me-2"></i>Accueil / Intro</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#propos-moi"
+                  ><i class="fa-solid fa-user me-2"></i>À propos de moi</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Competence"
+                  ><i class="fa-solid fa-code me-2"></i>Compétences</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Projets"
+                  ><i class="fa-solid fa-briefcase me-2"></i>Projets &
+                  Réalisations</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact"
+                  ><i class="fa-solid fa-phone me-2"></i>Contacts</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#Partenariat"
+                  ><i class="fa-solid fa-handshake me-2"></i>Partenariats</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="acceuil" class="container-fluid pt-5">
+      <h2 class="text-center text-primary fs-1 m-5 border-gauche border-5 p-1">
+        Mon intro
+      </h2>
+      <div class="row align-items-center">
+        <!-- colonne image -->
+        <div class="col-auto mx-auto col-lg-4 order-1 order-lg-1">
+          <!-- order-1/order-2 pour l'ordre des colonnes -->
+          <div class="circle-carousel-wrapper mx-auto">
+            <div
+              id="carouselExemple"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="Images/Moi_1.jpg"
+                    class="d-block carousel-img acceuil-image"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="Images/Moi_8.jpg"
+                    class="d-block carousel-img acceuil-image"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="Images/dryggo.jpg"
+                    class="d-block carousel-img acceuil-image"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExemple"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExemple"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- colonne texte -->
+        <div
+          class="col-12 col-lg-8 order-2 d-flex flex-column justify-content-center p-4 bg-light"
+        >
+          <p>
+            Bonjour, je m'appelle
+            <strong class="text-primary fs-2">Kouame Kouakou Rodrigue</strong>.
+          </p>
+          <p>
+            Etudiant en
+            <em class="fs-4 text-info">Informatique</em> passionné par
+            <em class="fs-4 text-info">le web</em> et aussi
+            <em class="fs-4 text-info">Développeur débutant</em> cherchant à
+            partager ses Projets.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- partie à propos de moi -->
+    <section id="propos-moi">
+      <h2 class="text-center text-primary fs-1 m-5 border-gauche border-5 p-1">
+        À Propos de Moi
+      </h2>
+      <div class="propos-moi">
+        <!-- tableau contenant tout mon pacpurs -->
+        <table class="fs-4 table table-bordered table-striped table-hover">
+          <thead>
+            <tr>
+              <th>Année académique</th>
+              <th>Diplôme</th>
+              <th>Ecole d'obtention</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2024-2025</td>
+              <td>Première année BTS Informatique Développeur d’Application</td>
+              <td>
+                <a
+                  class="text-decoration-none"
+                  href="https://Dryggo.github.io/Site-ESETEC/"
+                  target="_blank"
+                >
+                  Ecole Supérieure de l’Enseignement Technique et Commercial
+                  Yamoussoukro (ESETEC)</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>2023-2024</td>
+              <td>Baccalauréat C</td>
+              <td>Lycée Mixte I Yamoussoukro</td>
+            </tr>
+            <tr>
+              <td>2020-2021</td>
+              <td>Brevet d’Etude du Premier cycle</td>
+              <td>Lycée Moderne Tiassalé</td>
+            </tr>
+            <tr>
+              <td>2016-2017</td>
+              <td>Certificat d’Etude Primaire Elémentaire</td>
+              <td>
+                EPP Kouakou Ebinikro (Sous Préfecture de NOFOU Département de
+                DIMBOKKRO)
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- mes qualités -->
+        <div class="mes-qualite ms-5 me-2 fs-4">
+          <p>
+            Je me décris comme une personne
+            <strong class="text-info"
+              >motivée, curieuse, créative, sérieuse</strong
+            >.
+          </p>
+          <p>
+            Mon but est de devenir un grand
+            <strong class="text-info"
+              >dévéloppeur web,logiciel, un codeur pro</strong
+            >
+            afin de venir en aide à mon pays.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- mes Competence -->
+    <!-- Section Compétences -->
+    <section id="Competence" class="container my-5">
+      <h2 class="text-center text-primary fs-1 m-5 border-gauche border-5 p-1">
+        Compétences
+      </h2>
+
+      <div class="accordion" id="accordionCompetences">
+        <!-- Informatique -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingInformatique">
+            <button
+              class="accordion-button fs-4"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseInformatique"
+              aria-expanded="true"
+              aria-controls="collapseInformatique"
+            >
+              Informatique
+            </button>
+          </h2>
+          <div
+            id="collapseInformatique"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingInformatique"
+            data-bs-parent="#accordionCompetences"
+          >
+            <div class="accordion-body Competence">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <strong>Langage C</strong> <em>: Maîtrise des bases</em>
+                </li>
+                <li><strong>JavaScript</strong> <em>: Débutant</em></li>
+                <li><strong>Développement Web</strong> <em>: Débutant</em></li>
+                <li>
+                  <strong>Word, Excel, PowerPoint</strong> <em>: Débutant</em>
+                </li>
+                <li>
+                  <strong>Installation de logiciels & jeux</strong>
+                  <em
+                    >: Microsoft Office (2019/2021/2024), FIFA 23/19/15,
+                    AutoCAD, etc.</em
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Langues -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingLangues">
+            <button
+              class="accordion-button collapsed fs-4"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseLangues"
+              aria-expanded="false"
+              aria-controls="collapseLangues"
+            >
+              Langues
+            </button>
+          </h2>
+          <div
+            id="collapseLangues"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingLangues"
+            data-bs-parent="#accordionCompetences"
+          >
+            <div class="accordion-body Competence">
+              <ul class="list-unstyled mb-0">
+                <li><strong>Français</strong> <em>: Courant</em></li>
+                <li><strong>Anglais</strong> <em>: Notions de base</em></li>
+                <li><strong>Baoulé</strong> <em>: Courant</em></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interpersonnelles -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingInterpersonnelles">
+            <button
+              class="accordion-button collapsed fs-4"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseInterpersonnelles"
+              aria-expanded="false"
+              aria-controls="collapseInterpersonnelles"
+            >
+              Interpersonnelles
+            </button>
+          </h2>
+          <div
+            id="collapseInterpersonnelles"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingInterpersonnelles"
+            data-bs-parent="#accordionCompetences"
+          >
+            <div class="accordion-body Competence">
+              <ul class="list-unstyled mb-0">
+                <li><strong>Ponctuel</strong></li>
+                <li><strong>Esprit d'équipe</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  mes projets  -->
+    <section id="Projets" class="container">
+      <h2 class="text-center text-primary fs-1 m-5 border-gauche border-5 p-1">
+        Projets & Réalisations
+      </h2>
+
+      <div class="accordion" id="accordionProjet">
+        <!-- projets en cours de réalisation -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingEnCoursRealisation">
+            <button
+              class="accordion-button fs-4"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseEnCoursRealisation"
+              aria-expanded="true"
+              aria-controls="collapseEnCoursRealisation"
+            >
+              En cours de réalisation
+            </button>
+          </h2>
+          <div
+            id="collapseEnCoursRealisation"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingEnCoursRealisation"
+            data-bs-parent="#accordionProjet"
+          >
+            <div class="accordion-body Competence">
+              <ul class="list-unstyled">
+                <!-- premier projet en cours logiciel de gestion d'une école -->
+
+                <li>
+                  <strong class="fs-4"
+                    >Logiciel de gestion d'une École du sécondaire</strong
+                  >
+                  <p class="fs-5">
+                    Ce logiciel doit permettre la gestion des membres de
+                    l'établissement , les Éleves, les notes, et bien d'autres .
+                  </p>
+                </li>
+
+                <li>
+                  <strong class="fs-4">Journal d'humeur</strong>
+                  <p class="fs-5">
+                    Ce site permettra aux personnes de donner leur humeur chaque
+                    jours. Il pourra voir après un mois les statistiques de ses
+                    humeurs et aussi obtenir des conseils pour mieux les gérés .
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- projets réalisés -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingRealiser">
+            <button
+              class="accordion-button collapsed fs-4"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseRealiser"
+              aria-expanded="false"
+              aria-controls="collapseRealiser"
+            >
+              Réalisés
+            </button>
+          </h2>
+
+          <div
+            id="collapseRealiser"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingRealiser"
+            data-bs-parent="#accordionProjet"
+          >
+            <div class="accordion-body Competence container-fluid pt-5">
+              <!-- Ligne 1 -->
+              <div class="row align-items-center mb-5">
+                <!-- Colonne texte -->
+                <div
+                  class="col-12 col-lg-4 order-1 order-lg-1 d-flex flex-column justify-content-center p-4 bg-light"
+                >
+                  <strong class="fs-4">Site web de mon école (ESETEC)</strong>
+                  <p class="fs-5">
+                    Ce site présente l'école , les cyles disponibles ainsi que
+                    les filières se trouvant dans chaque cycle .
+                  </p>
+                </div>
+
+                <!-- Colonne image -->
+                <div class="col-12 col-lg-6 order-2 order-lg-2 mx-auto">
+                  <div class="mx-auto w-50">
+                    <div
+                      id="carouselExemple1"
+                      class="carousel slide"
+                      data-bs-ride="carousel"
+                    >
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <a
+                            href="https://Dryggo.github.io/Site-ESETEC/"
+                            target="_blank"
+                          >
+                            <img
+                              src="Images/Acceuil_ESETEC.jpg"
+                              class="d-block carousel-img projet-image"
+                              alt="..."
+                          /></a>
+                        </div>
+                        <div class="carousel-item">
+                          <a
+                            href="https://Dryggo.github.io/Site-ESETEC/"
+                            target="_blank"
+                          >
+                            <img
+                              src="Images/BTS_ESETEC.jpg"
+                              class="d-block carousel-img projet-image"
+                              alt="..."
+                          /></a>
+                        </div>
+                        <div class="carousel-item">
+                          <a
+                            href="https://Dryggo.github.io/Site-ESETEC/"
+                            target="_blank"
+                          >
+                            <img
+                              src="Images/Classes_Prepas_ESETEC.jpg"
+                              class="d-block carousel-img projet-image"
+                              alt="..."
+                          /></a>
+                        </div>
+                        <div class="carousel-item">
+                          <a
+                            href="https://Dryggo.github.io/Site-ESETEC/"
+                            target="_blank"
+                          >
+                            <img
+                              src="Images/cycle_ingenieur_ESETEC.jpg"
+                              class="d-block carousel-img projet-image"
+                              alt="..."
+                          /></a>
+                        </div>
+                        <div class="carousel-item">
+                          <a
+                            href="https://Dryggo.github.io/Site-ESETEC/"
+                            target="_blank"
+                          >
+                            <img
+                              src="Images/Master_ESETEC.jpg"
+                              class="d-block carousel-img projet-image"
+                              alt="..."
+                          /></a>
+                        </div>
+                        <div class="carousel-item">
+                          <a
+                            href="https://Dryggo.github.io/Site-ESETEC/"
+                            target="_blank"
+                          >
+                            <img
+                              src="Images/Doctorat_ESETEC.jpg"
+                              class="d-block carousel-img projet-image"
+                              alt="..."
+                          /></a>
+                        </div>
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExemple1"
+                        data-bs-slide="prev"
+                      >
+                        <span class="carousel-control-prev-icon"></span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExemple1"
+                        data-bs-slide="next"
+                      >
+                        <span class="carousel-control-next-icon"></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Ligne 2 mes services -->
+              <div class="row align-items-center mb-5">
+                <!-- Colonne texte -->
+                <div
+                  class="col-12 col-lg-4 order-1 order-lg-1 d-flex flex-column justify-content-center p-4 bg-light"
+                >
+                  <strong class="fs-4"
+                    >Site web pour la présentattion de mes services</strong
+                  >
+                  <p class="fs-5">
+                    Ce site présente mes services en installation de logiciels ,
+                    de systèmes d'exploitation ( operating system ), de jeux etc
+                  </p>
+                </div>
+
+                <!-- Colonne image -->
+                <div class="col-12 col-lg-6 order-2 order-lg-2 mx-auto">
+                  <div class="mx-auto w-50">
+                    <div
+                      id="carouselExemple2"
+                      class="carousel slide"
+                      data-bs-ride="carousel"
+                    >
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <a
+                            href="https://Dryggo.github.io/Services-Informatique-Reseau/"
+                            target="_blank"
+                          >
+                            <img
+                              src="Images/mes_services1.png"
+                              class="d-block carousel-img projet-image"
+                              alt="..."
+                          /></a>
+                        </div>
+                        <div class="carousel-item">
+                          <a
+                            href="https://Dryggo.github.io/Services-Informatique-Reseau/"
+                            target="_blank"
+                          >
+                            <img
+                              src="Images/mes_services2.png"
+                              class="d-block carousel-img projet-image"
+                              alt="..."
+                          /></a>
+                        </div>
+                        <div class="carousel-item">
+                          <a
+                            href="https://Dryggo.github.io/Services-Informatique-Reseau/"
+                            target="_blank"
+                          >
+                            <img
+                              src="Images/mes_services.png"
+                              class="d-block carousel-img projet-image"
+                              alt="..."
+                          /></a>
+                        </div>
+                        <div class="carousel-item">
+                          <a
+                            href="https://Dryggo.github.io/Services-Informatique-Reseau/"
+                            target="_blank"
+                          >
+                            <img
+                              src="Images/mes_services3.png"
+                              class="d-block carousel-img projet-image"
+                              alt="..."
+                          /></a>
+                        </div>
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExemple2"
+                        data-bs-slide="prev"
+                      >
+                        <span class="carousel-control-prev-icon"></span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExemple2"
+                        data-bs-slide="next"
+                      >
+                        <span class="carousel-control-next-icon"></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Ligne 3  chiffoumi-->
+              <div class="row align-items-center mb-5">
+                <div
+                  class="col-12 col-lg-4 order-1 order-lg-1 d-flex flex-column justify-content-center p-4 bg-light"
+                >
+                  <strong class="fs-4"
+                    >Jeux Chifoumi (pierre-papier-ciseau)</strong
+                  >
+                  <p class="fs-5">
+                    Petit programme sur console( codé en Langage C) permettant
+                    de jouer à pierre-papier-ciseaux contre l'ordinateur.
+                  </p>
+                </div>
+
+                <div class="col-12 col-lg-6 order-2 order-lg-2 mx-auto">
+                  <div class="mx-auto w-50">
+                    <div
+                      id="carouselExemple3"
+                      class="carousel slide"
+                      data-bs-ride="carousel"
+                    >
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img
+                            src="Images/chifoumi.jpg"
+                            class="d-block carousel-img projet-image"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="Images/chifoumi2.jpg"
+                            class="d-block carousel-img projet-image"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="Images/chifoumi3.jpg"
+                            class="d-block carousel-img projet-image"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="Images/chifoumi4.jpg"
+                            class="d-block carousel-img projet-image"
+                            alt="..."
+                          />
+                        </div>
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExemple3"
+                        data-bs-slide="prev"
+                      >
+                        <span class="carousel-control-prev-icon"></span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExemple3"
+                        data-bs-slide="next"
+                      >
+                        <span class="carousel-control-next-icon"></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Ligne 4   eu de Tic Tac Toe -->
+              <div class="row align-items-center mb-5">
+                <div
+                  class="col-12 col-lg-4 order-1 order-lg-1 d-flex flex-column justify-content-center p-4 bg-light"
+                >
+                  <strong class="fs-4"
+                    >Jeu de devinette sur console en Langage C</strong
+                  >
+                  <p class="fs-5">
+                    Ce petit programme propose trois niveaux ( Facile, moyen,
+                    difficile) . En fonction du choix du joueur on lui demande
+                    de deviner un nombre dans une plage.
+                  </p>
+                </div>
+
+                <div class="col-12 col-lg-6 order-2 order-lg-2 mx-auto">
+                  <div class="mx-auto w-50">
+                    <div
+                      id="carouselExemple4"
+                      class="carousel slide"
+                      data-bs-ride="carousel"
+                    >
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img
+                            src="Images/devinette .jpg"
+                            class="d-block carousel-img projet-image"
+                            alt="..."
+                          />
+                        </div>
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExemple4"
+                        data-bs-slide="prev"
+                      >
+                        <span class="carousel-control-prev-icon"></span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExemple4"
+                        data-bs-slide="next"
+                      >
+                        <span class="carousel-control-next-icon"></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Ligne 5  Jeu de Tic Tac Toe-->
+              <div class="row align-items-center mb-5">
+                <div
+                  class="col-12 col-lg-4 order-1 order-lg-1 d-flex flex-column justify-content-center p-4 bg-light"
+                >
+                  <strong class="fs-4"
+                    >Jeu de Tic Tac Toe sur console en Langage C</strong
+                  >
+                  <p class="fs-5">
+                    Ce programme a pour rêgle d'aligner trois pions d'un même
+                    joueur sur une ligne ou une colonne ou une diagonale. Ce
+                    petit programme permet à deux joueurs de s'affronter .
+                  </p>
+                </div>
+
+                <div class="col-12 col-lg-6 order-2 order-lg-2 mx-auto">
+                  <div class="mx-auto w-50">
+                    <div
+                      id="carouselExemple5"
+                      class="carousel slide"
+                      data-bs-ride="carousel"
+                    >
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img
+                            src="Images/Tic_tac_toe.jpg"
+                            class="d-block carousel-img projet-image"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="Images/Tic_tac_toe2.jpg"
+                            class="d-block carousel-img projet-image"
+                            alt="..."
+                          />
+                        </div>
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExemple5"
+                        data-bs-slide="prev"
+                      >
+                        <span class="carousel-control-prev-icon"></span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExemple5"
+                        data-bs-slide="next"
+                      >
+                        <span class="carousel-control-next-icon"></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- partie de formulaire -->
+    <section id="Contact" class="container my-5">
+      <h2 class="text-center text-primary fs-1 m-5 border-gauche border-5 p-1">
+        <i class="fa-solid fa-phone"> </i> Contact
+      </h2>
+
+      <div class="contact">
+        <div>
+          <p class="type-service" id="titre-formulaire">
+            Remplis le formulaire ou écris directement à
+            <strong>
+              <a
+                id="mon-email"
+                href="mailto:kouamerdrigue@gmail.com"
+                target="_blank"
+                class="text-decoration-none"
+                >kouamerodrigue340@gmail.com</a
+              ></strong
+            >
+          </p>
+
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            id="form-identification"
+          >
+            <!-- nom-->
+            <input
+              type="hidden"
+              name="access_key"
+              value="d6592e0a-e6ce-4638-9c11-a1ae52c0169d"
+            />
+
+            <!-- Identifier le type de formulaire -->
+            <input
+              type="hidden"
+              name="site"
+              value="Dryggo Kouame — Services Informatiques.github.io"
+            />
+            <input
+              type="hidden"
+              name="subject"
+              value="Nouveau message depuis Dryggo Kouame — Services Informatiques.github.io"
+            />
+            <input type="hidden" name="form_type" value="contact" />
+
+            <!-- saisir du nom -->
+            <div class="input-group">
+              <i class="fa-solid fa-user"></i>
+              <input
+                type="text"
+                id="nom"
+                name="nom"
+                placeholder="Nom"
+                required
+                pattern="^[A-Za-zÀ-ÖØ-öø-ÿ\s\-']+$"
+                title="Le nom ne doit contenir que des lettres, espaces ou tirets."
+              />
+            </div>
+            <!-- prenom -->
+            <div class="input-group">
+              <i class="fa-solid fa-user-pen"></i>
+              <input
+                type="text"
+                id="prenom"
+                name="prenom"
+                placeholder="Prénom(s)"
+                required
+                pattern="^[A-Za-zÀ-ÖØ-öø-ÿ\s\-']+$"
+                title="Le prénom ne doit contenir que des lettres, espaces ou tirets."
+              />
+            </div>
+            <div class="input-group">
+              <i class="fa-solid fa-venus-mars"></i>
+              <select name="sexe" id="sexe" required>
+                <option value="">-- Sexe --</option>
+                <option value="M">Homme</option>
+                <option value="F">Femme</option>
+              </select>
+            </div>
+
+            <!-- email -->
+            <div class="input-group">
+              <i class="fa-solid fa-envelope"></i>
+              <input
+                type="email"
+                id="mail"
+                name="mail"
+                placeholder="Adresse e-mail"
+                required
+                title="Veuillez entrer une adresse e-mail valide."
+              />
+            </div>
+
+            <!-- telephone -->
+            <div class="input-group">
+              <i class="fa-solid fa-phone"></i>
+              <input
+                type="tel"
+                id="telephone"
+                name="telephone"
+                placeholder="+2250100000000"
+                required
+              />
+            </div>
+
+            <!-- Résultat de la validation du numéro -->
+            <p id="resultat"></p>
+
+            <div class="input-group">
+              <i class="fa-solid fa-comment"></i>
+              <textarea
+                id="commentaire"
+                name="commentaire"
+                placeholder="Votre commentaire..."
+                required
+              ></textarea>
+            </div>
+            <button class="bouton-envoyer bg-primary" type="submit">
+              Envoyer
+            </button>
+          </form>
+        </div>
+        <!-- message pour mon numero -->
+        <aside
+          style="
+            padding: 12px;
+            border-radius: 10px;
+            background-color: #ffffff;
+            box-shadow: 0 6x 24px rgba(15, 23, 36, 0.08);
+          "
+        >
+          <h4 class="fs-5 text-dark">Vous pouvez me joindre aussi par :</h4>
+
+          <div style="margin-top: 12px; font-weight: 700">
+            <span class="type-service"
+              ><i class="fa-solid fa-phone"></i>
+              <a
+                href="tel:+2250711841866"
+                class="text-decoration-none text-dark"
+                target="_blank"
+                >+2250711841866</a
+              ></span
+            ><br />
+            <span class="type-service"
+              ><i class="fa-brands fa-whatsapp"></i>
+
+              <a
+                href="https://wa.me/2250711841866"
+                class="text-decoration-none text-dark"
+                target="_blank"
+                >+2250711841866</a
+              ></span
+            >
+          </div>
+        </aside>
+      </div>
+    </section>
+    <footer class="container">
+      <div id="Partenariat" class="bg-white">
+        <h2
+          class="text-center text-primary fs-1 m-5 border-gauche border-5 p-1"
+        >
+          Partenaires
+        </h2>
+
+        <a
+          href="https://dimarco124.github.io/AuraStory/"
+          class="align-text-center"
+        >
+          <img
+            src="Images/story.jpg"
+            alt="AuraStory"
+            width="70"
+            height="70"
+            class="d-inline-block align-text-center mb-3 ms-5 logo"
+          />
+        </a>
+      </div>
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+        "
+      >
+        <div>&copy; <strong>Dryggo Kouame</strong> — Tous droits réservés</div>
+        <div class="type-service">
+          Mentions légales • Politique de confidentialité
+        </div>
+      </div>
+    </footer>
+    <!-- script vers js boostrap -->
+    <script src="script.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+
+    <!-- Librairie principale JS (celle dont tu parles) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.1.1/js/intlTelInput.min.js"></script>
+
+    <!-- Script d’utilitaires (formatage, validation avancée) -->
+    <!-- Il est chargé automatiquement de manière asynchrone -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.1.1/js/utils.js"></script>
+  </body>
+</html>

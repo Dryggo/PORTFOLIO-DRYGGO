@@ -1,0 +1,225 @@
+.acceuil-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+.logo {
+  border-radius: 50%;
+}
+.projet-image {
+  width: 100%;
+  height: 150px;
+}
+.carousel-inner {
+  display: flex;
+  align-items: center;
+  background-color: #000;
+}
+
+/* === BOUTONS DE NAVIGATION (flèches) === */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  position: absolute;
+  /* top: 50%; 
+  transform: translateY(-50%);*/
+  background: rgba(0, 0, 0, 0.5);
+  background-size: 100% 100%;
+  border-radius: 50%;
+  cursor: pointer;
+  /* transition: background 0.3s ease; */
+}
+/* pour p'tit écran */
+@media (max-width: 992px) {
+  .circle-carousel-wrapper {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none !important;
+  }
+  .cardousel-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
+  .carousel-img {
+    /* margin-left: 20% ; */
+    width: 100%;
+    height: 200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+}
+/* le trait qui apparait devant les H2 */
+.border-gauche {
+  color: #004080;
+  border-left: 4px solid #0077cc;
+  flex-wrap: wrap; /*pour passer à la ligne*/
+}
+
+/* style sur le tableau comportant mon parcours */
+.propos-moi td,
+.propos-moi th {
+  border: 3.5px solid #999;
+  /* font-size: 1.2em; */
+  padding: 1% 1%;
+  text-align: center; /*centrage des textes dans les tableaux*/
+}
+.propos-moi table {
+  border-collapse: collapse; /*permet de coller les bords*/
+  /* margin: 2%; */
+}
+/* style sur l'entête du tableau */
+.propos-moi th {
+  background-color: #e8e8e8; /*fond gris clair pour distinguer les entetes*/
+  font-weight: bold;
+  font-style: oblique;
+  /* font-size: 1.5em; */
+}
+
+/* style sur les elements des premieres colonnes */
+.propos-moi tbody td:first-child,
+.propos-moi tbody td:nth-child(even),
+.propos-moi tbody td:last-child {
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 2px 3px 5px;
+}
+.propos-moi tbody td:first-child {
+  color: rgba(39, 64, 139);
+}
+/* style sur les elements des deuxiemes colonnes */
+.propos-moi tbody td:nth-child(even) {
+  color: rgba(0, 34, 102);
+}
+/* style sur le derniere colonne du tablezu */
+.propos-moi tbody td:last-child {
+  color: #36648b;
+}
+.propos-moi a {
+  color: #36648b;
+  text-decoration: none;
+}
+.propos-moi a:hover {
+  color: #d02090;
+}
+/* adaptation du tableau au nivau de apropos de moi */
+@media (max-width: 768px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    /* white-space: nowrap; */
+  }
+}
+.accordion-button:not(.collapsed) {
+  background-color: #0077cc;
+  color: white;
+}
+
+.accordion-button {
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-body {
+  background-color: #f8f9fa;
+  border-left: 4px solid #0077cc;
+}
+/* style sur la partie compétence */
+.Competence strong {
+  color: #1e90ff;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Contact */
+.contact {
+  margin-top: 24px;
+  padding: 18px;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 18px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=1920&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white; /* si ton texte doit rester visible */
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input,
+textarea,
+select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #e6edf7;
+  font-size: 15px;
+  padding: 12px 15px 12px 45px;
+}
+
+.input-group i {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #444;
+  font-size: 18px;
+}
+/* ---- Champs du formulaire ---- */
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+  width: 12px;
+}
+strong a {
+  color: linear-gradient(180deg, #f6f8fb, #ffffff);
+}
+strong a:hover,
+span a:hover {
+  background: rgba(6, 182, 212, 0.08);
+  color: #06b6d4;
+}
+button.bouton-envoyer {
+  background: linear-gradient(90deg, #0d6efd, #06b6d4);
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 28px;
+  padding: 18px 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 920px) {
+  .baniere-principale {
+    grid-template-columns: 1fr;
+  }
+
+  .contact {
+    grid-template-columns: 1fr;
+  }
+}
+.fa-whatsapp {
+  color: #009688;
+}
+.type-service .fa-phone {
+  color: #4caf50;
+}
